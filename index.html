@@ -1,0 +1,64 @@
+<!-- 
+    Vitor Onofre Ramos
+    RM553241
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint III - Javascript</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Checkpoint III - Javascript</h1>
+        <span>Calcule o índice de massa corpórea</span>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <th>IMC</th>
+                <th>Resultado</th>
+            </tr>
+            <tr>
+                <td>Abaixo de 17</td>
+                <td>Muito Abaixo do peso Ideal</td>
+            </tr>
+                <td>Entre 17 e 18,49</td>
+                <td>Abaixo do peso ideal</td>
+            <tr>
+                <td>Entre 18,5 e 25,99</td>
+                <td>Abaixo do peso</td>
+            </tr>
+                <td>Entre 25 e 29,99</td>
+                <td>Peso normal</td>
+            <tr>
+                <td>Entre 30 e 34,99</td>
+                <td>Obesidade grau 1</td>
+            </tr>
+            <tr>
+                <td>Entre 35 e 39,99</td>
+                <td>Obesidade grau 2</td>
+            </tr>
+            <tr>
+                <td>Acima de 40</td>
+                <td>Obesidade grau 3</td>
+            </tr>
+        </table>
+        <form id="formulario">
+            <label for="kg">Seu peso em Kg:</label>
+            <input type="number" id="kg" name="kg" value="" step="0.01">
+            <label for="m">Sua altura em m:</label>
+            <input type="number" id="m" name="m" value="" step="0.01" max="3">
+            
+            <input class="button js-button" type="submit">
+        </form>
+        <div id="resultado">
+            <span id="imc"></span>
+        </div>
+    </main>
+    <script src="src/js/calcular.js"></script>
+</body>
+</html>
